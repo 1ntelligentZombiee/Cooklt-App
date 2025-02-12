@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookIt - Recipe Hub</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Zeyada&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="#">CookIt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section bg-dark text-white py-5">
+        <div class="container py-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-center">
+                        <h1 class="display-4 fw-semibold animate-slide-in text-center pe-3" style="text-shadow: -4px 4px 10px #0000004a;">Discover </h1>
+                        <h1 class="display-4 fw-semibold animate-slide-in text-center pe-2" style="color: #ffe171; text-shadow: -4px 4px 10px #3a564638;">Amazing </h1>
+                    </div>
+                    <h1 class="display-4 fw-semibold mb-4 animate-slide-in text-center" style="text-shadow: -4px 4px 10px #0000004a;">Recipes</h1>
+                    <p class="lead mb-4 text-center text-light" style="text-shadow: -4px 4px 10px #0000004a;">Find perfect meals matching your dietary needs and preferences</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="filters-section pt-5 bg-light" id="filters">
+        <div class="container">
+            <div class="d-flex flex-wrap gap-5 justify-content-center" id="filtersContainer"></div>
+        </div>
+    </section>
+
+    <!-- Recipes Grid -->
+    <main class="recipes-section py-5" id="recipes">
+        <div class="container">
+            <div class="row g-4" id="recipesContainer">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-2">
+        <div class="container">
+            <div class="row g-4 pt-5 pb-2">
+                <div class="col-md-7">
+                    <h5>About CookIt</h5>
+                    <p>Your go-to source for delicious recipes since 2023</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#recipes" class="text-white text-decoration-none">Recipes</a></li>
+                        <li><a href="#about" class="text-white text-decoration-none">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Connect</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center mt-3">
+                <p>&copy; 2023 CookIt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+</body>
+</html>
